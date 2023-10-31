@@ -33,9 +33,15 @@ The above regular expression is used to validate email addresses and checks for 
 + Email validation regex: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 + These quanitifiers allow email addresses with different patterns are matches. An example is that it can match emails like giselle@gmail.com and gigi@us.co.google.com while still following the standard format regulations.
 ### Grouping Constructs
-
++ Grouping with () allow programmers to use a portion of the pattern as a unit
++ Capturing allows programmers to retrieve the content stored inside the parentheses (grouping) at a later time for their code if needed. 
++ Below is an example of grouping from the email validation regex: (\.\w{2,3})+
 
 ### Bracket Expressions
++ Bracket expressions allow programmers to specify a set of  characters to match while also allowing variations. For example: 
++ in the email validation regex we have, `[.-]` in these brackets is a dot and hyphen. This allows programmers to allow
+email addresses with . and -. Emails like giselle-m@gmail.com or giselle.m@gmail.com would be allowed. 
+
 
 ### Character Classes
 
